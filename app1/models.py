@@ -6,4 +6,6 @@ class StudentRegistration(models.Model):
     college_name=models.CharField(max_length=100)
     course_name=models.CharField(max_length=100)
     date =models.DateTimeField(auto_now_add=True)
+    class Meta:
+        db_table= "app1_learning"
     
