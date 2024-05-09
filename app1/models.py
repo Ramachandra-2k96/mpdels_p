@@ -8,4 +8,5 @@ class StudentRegistration(models.Model):
     date =models.DateTimeField(auto_now_add=True)
     class Meta:
         db_table= "app1_learning"
-    
+    def __str__(self):
+        return self.name
