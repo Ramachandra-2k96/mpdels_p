@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        {% for user in users%}
+        <h1 class="heading">{{param2.str1}}</h1>
+        <div class="content">
+            <h2 class="info">
+                {{param2.str2}} {{user.name}} {{param2.str3}}{{user.college_name}}{{param2.str4}}{{user.course_name}} {{param2.str5}}
+            </h2>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
